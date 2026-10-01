@@ -1,7 +1,10 @@
-const btn = document.querySelector(".menu-btn");
+const btn = document.querySelector(".menu-buttons");
 const nav = document.querySelector("nav");
 if (btn && nav) {
-	btn.addEventListener("click", () => nav.classList.toggle("open"));
+	btn.addEventListener("click", () => {
+    nav.classList.toggle("open")
+    btn.classList.toggle("open")
+  });
 }
 const form = document.querySelector("#contact-form");
 if (form) {

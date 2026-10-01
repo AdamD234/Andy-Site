@@ -142,7 +142,7 @@ nav a:focus-within::after {
 	inset: 110% 0 0 0;
 }
 
-.menu-btn {
+.menu-buttons {
 	display: none;
 	border: 0;
 	background: none;
@@ -693,8 +693,20 @@ footer ul {
 		width: min(100% - 40px, var(--max));
 	}
 
-	.menu-btn {
+	.menu-buttons {
 		display: block;
+	}
+
+	.menu-buttons .close-btn {
+		display: none;
+	}
+
+	.menu-buttons.open .close-btn {
+		display: block;
+	}
+
+	.menu-buttons.open .open-btn {
+		display: none;
 	}
 
 	nav {
