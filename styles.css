@@ -198,7 +198,8 @@ nav a:focus-within::after {
 	z-index: -1;
 }
 
-.hero p {
+.hero p,
+.page-banner p {
 	color: var(--offwhite);
 	max-width: 590px;
 }
