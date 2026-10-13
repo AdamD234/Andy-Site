@@ -129,23 +129,59 @@
 						</div>
 					</div>
 					<div>
-						<form class="form-card" id="contact-form">
+						<form
+							class="form-card"
+							id="contact-form"
+							action="https://api.web3forms.com/submit"
+							method="POST">
+							<!-- Web3Forms Access Key -->
+							<input
+								type="hidden"
+								name="access_key"
+								value="97df8095-fcc3-437f-a1ef-b4cee1cc4765" />
+							<input
+								type="hidden"
+								name="subject"
+								value="New City Stone Masonry Website Enquiry" />
+
 							<h2>Send a Message</h2>
-							<label>Full Name</label>
-							<input name="name" placeholder="Your Name" />
-							<label>Email Address</label>
-							<input type="email" name="email" placeholder="Your Email" />
-							<label>Phone Number</label>
-							<input name="phone" placeholder="Your Phone Number" />
-							<label>Project Description / Message</label>
+
+							<label for="name">Full Name</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="Your Name"
+								required />
+
+							<label for="email">Email Address</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Your Email"
+								required />
+
+							<label for="phone">Phone Number</label>
+							<input
+								type="tel"
+								id="phone"
+								name="phone"
+								placeholder="Your Phone Number" />
+
+							<label for="message">Project Description / Message</label>
 							<textarea
+								id="message"
 								name="message"
-								placeholder="How can City Stone Masonry help you?">
-							</textarea>
+								placeholder="How can City Stone Masonry help you?"
+								required></textarea>
+
 							<button class="btn" type="submit">Send Message</button>
 						</form>
 						<div class="qr-card">
-							<img src="images/citystonemasonry_qr.png" alt="City Stone Masonry instagram qr code">
+							<img
+								src="images/citystonemasonry_qr.png"
+								alt="City Stone Masonry instagram qr code" />
 							<div>
 								<h3>Scan to Follow City Stone Masonry</h3>
 								<p>

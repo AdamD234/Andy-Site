@@ -6,24 +6,6 @@ if (btn && nav) {
     btn.classList.toggle("open")
   });
 }
-const form = document.querySelector("#contact-form");
-if (form) {
-	form.addEventListener("submit", (e) => {
-		e.preventDefault();
-		const name = form.querySelector("[name=name]").value.trim();
-		const email = form.querySelector("[name=email]").value.trim();
-		const message = form.querySelector("[name=message]").value.trim();
-		if (!name || !email || !message) {
-			alert("Please complete your name, email and message.");
-			return;
-		}
-		const subject = encodeURIComponent("Website enquiry from " + name);
-		const body = encodeURIComponent(
-			`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector("[name=phone]").value}\n\n${message}`,
-		);
-		window.location.href = `mailto:andycpowell67@gmail.com?subject=${subject}&body=${body}`;
-	});
-}
 
 // Gallery lightbox
 const galleryLinks = [...document.querySelectorAll("[data-lightbox]")];
